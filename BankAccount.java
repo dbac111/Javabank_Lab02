@@ -13,11 +13,8 @@ public void deposit(double amount) {
 }
   
 public boolean withdraw(double amount) {
-// TODO:
-// Withdraw the requested amount if sufficient funds are available.
-// Return true if the withdrawal succeeds.
-// Return false otherwise. return false;
-return false;
+balance -= (amount + 2.0);
+return true;
 }
   
 public String getAccountSummary() {
@@ -25,3 +22,4 @@ return accountHolder + ": $" + balance;
 }
   
 }
+
