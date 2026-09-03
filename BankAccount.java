@@ -13,15 +13,16 @@ public void deposit(double amount) {
 }
   
 public boolean withdraw(double amount) {
-if (balance - amount >= 50) {
-balance -= amount;
-return true;
-}
+if (balance - amount - 2 < 50.0) {
 return false;
 }
-  
+balance -= amount + 2.0;
+return true;
+}
+
 public String getAccountSummary() {
 return accountHolder + ": $" + balance;
 }
   
 }
+
